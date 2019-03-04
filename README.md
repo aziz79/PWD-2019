@@ -5,4 +5,4 @@ Universitas Kanjuruhan Malang
 2019
 
 No.  Nama                    NPM                  Nama Akun
-1.
+1.  Wismo Ginanjar      180403010004                 Wism0
