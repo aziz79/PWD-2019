@@ -5,4 +5,4 @@ Universitas Kanjuruhan Malang
 2019
 
 No.  Nama                    NPM                  Nama Akun
-1.
+1. Ikbal Nurmansyah      18040301006         IkbalNurmansyah
