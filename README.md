@@ -20,3 +20,4 @@ No.  Nama                    NPM                  Nama Akun
 13. Wismo Ginanjar            180403010004         Wism0
 14. Ikbal Nurmansyah          180403010016         Ikbal Nurmansyah
 15. Sebastian Yobel T         180403010023         yobeltuturop
+16. Oky Kurnia Wardana        180403010015         oky27
