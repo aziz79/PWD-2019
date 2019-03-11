@@ -17,5 +17,6 @@ No.  Nama                    NPM                  Nama Akun
 10. yusrilizzha pratama       180403010019         yusrilizzhap
 11. Priagung Adib Taqwa       180403010009         Adibpt
 12. Erwin Dwi Pangestu        180403010042         erwindwiSS
-13. Wismo Ginanjar             180403010004        Wism0
+13. Wismo Ginanjar            180403010004         Wism0
 14. Ikbal Nurmansyah          180403010016         Ikbal Nurmansyah
+15. Sebastian Yobel T         180403010023         yobeltuturop
