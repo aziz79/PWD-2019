@@ -15,4 +15,5 @@ No.  Nama                    NPM                  Nama Akun
 8. Daniel Guevara Martono     180403010006         DanHenDles
 9. Gideon putra purnama       180403010021         GideonPutraSS
 10. yusrilizzha pratama       180403010019         yusrilizzhap
-13.Wismo Ginanjar             180403010004         Wism0
+11. Priagung Adib Taqwa       180403010009         Adibpt
+12. Erwin Dwi Pangestu        180403010042         erwindwiSS
