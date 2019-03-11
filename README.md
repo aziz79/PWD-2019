@@ -16,3 +16,4 @@ No.  Nama                    NPM                  Nama Akun
 9. Gideon putra purnama       180403010021         GideonPutraSS
 10. yusrilizzha pratama       180403010019         yusrilizzhap
 13.Wismo Ginanjar             180403010004         Wism0
+14 Oky Kurnia Wardana         180403010015.        oky27
