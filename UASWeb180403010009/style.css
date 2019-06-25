@@ -1,0 +1,175 @@
+html{
+    scroll-behavior: smooth;
+}
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+a{
+    text-decoration: none;
+}
+li{
+    list-style: none;
+}
+header{
+    position: fixed;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 5px 100px 0;
+    animation: 1s animate 0.5s forwards;
+    opacity: 0;
+    color: black;
+    z-index: 10;
+
+}
+@keyframes animate{
+    100%{
+        opacity: 1;
+    }
+}
+header h1{
+    font-family: baloo;
+}
+header nav{
+    display: flex;
+    margin-right: -15px;
+}
+header nav li{
+    margin:0 15px;
+}
+header nav li a{
+    color: black;
+}
+
+
+@media(max-width:800px){
+    header{
+        padding: 20px 50px;
+        flex-direction: column;
+    }
+    header h1{
+        margin-bottom: 15px;
+
+    }
+    header nav li{
+        margin:0 7px;
+    }
+}
+section{
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+section:nth-child(odd){
+    background: #ccc;
+}
+.kotak1{
+    color: black;
+    position: absolute;
+    width: 440px;
+    top: 46%;
+    left: 28%;
+    transform: translate(-50%,-50%);
+    text-align: left;
+}
+.kotak1 p{
+    padding: 10px 0 20px 0;
+}
+.kotak1 a{
+    color: #fff;
+    background: green;
+    padding: 12px 15px;
+    letter-spacing: 2px;
+    position: absolute;
+    border-radius: 9px;
+}
+.gambar{
+    position: absolute;
+    z-index: 0;
+    top: 30%;
+    right: 14%;
+    transform: translate(-50%);
+}
+main{
+    display: flex;
+}
+@media(max-width:800px){
+    main{
+        position: absolute;
+    }
+    .kotak1{
+        text-align: center;
+    }
+    .kotak1 a{
+        justify-content: center;
+        align-items: center;
+        transform: translate(-50%);
+    }
+  .gambar{
+    display: none;
+    }
+}
+
+
+input[type=text], input[type=password] {
+    width: 100%;
+    padding: 12px 20px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+  }
+  input[type=submit]{
+      padding: 12px 20px;
+      border-radius: 10px;
+      color: #fff;
+      background: green;
+      border: none;
+      cursor: pointer;
+  }
+ .pang input[type=submit]{
+     top: 110%;
+     right: 34%;
+     position: absolute;
+    padding: 12px 20px;
+    border-radius: 10px;
+    color: #fff;
+    background: green;
+    border: none;
+    cursor: pointer;
+}
+  .pang input[type=text] {
+      top:110%;
+      
+      position: absolute;
+    width: 50%;
+    padding: 12px 20px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+  }
+@media(max-width:800px){
+.turun .as{
+    top:10%;
+}
+.pang input[type=text]{
+top:120%;
+position: absolute;
+}
+.pang input[type=submit]{
+    top:120%;
+    right: 28%;
+    position: absolute;
+    }
+    input[type=text], input[type=password]{
+        width: 100%;
+        padding: 12px 20px;
+        border: 1px solid #ccc;
+        border-radius: 4px;
+        box-sizing: border-box;
+        
+    }
+}

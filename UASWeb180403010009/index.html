@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="style.css">
+    <style>
+        #map_canvas {
+            height: 100%;
+        }
+    </style>
+    <title>Buku</title>
+</head>
+
+<body>
+    <header>
+        <h1>Buku</h1>
+        <nav>
+            <li><a href="#sec1">Home</a></li>
+            <li><a href="#sec2">Rute</a></li>
+            <li><a href="#sec3" id="aktif">Login</a></li>
+        </nav>
+    </header>
+    <section id="sec1">
+        <main>
+            <div class="kotak1">
+                <h1>Rute Toko Buku</h1>
+                <p>Rute terbaik anda mencari buku <br>Dan mencari inspirasi terbaik dan lengkap</p>
+                <a href="">Daftar</a>
+            </div>
+            <div class="gambar">
+                <img src="img/1.png" alt="">
+            </div>
+        </main>
+    </section>
+    <section id="sec2" class="turun">
+        <div class="pang">
+            <input type="text" name="" id="" placeholder="Pencarian">
+            <input type="submit" value="Cari">
+        </div>
+        <div id="map_canvas" class="as" style="width:80%; height:60%;">
+    </section>
+    <section id="sec3">
+        <div class="login">
+            <input type="text" name="" id="" placeholder="Username"> <br>
+            <input type="password" name="" id="" placeholder="Password"> <br>
+            <input type="submit" value="Login">
+        </div>
+    </section>
+</body>
+<script type="text/javascript" src="http://maps.google.com/maps/api/js?sensor=false"></script>
+<script type="text/javascript">
+    (function () {
+        var infowindow = null;
+
+        initialize();
+
+    })();
+
+
+    function initialize() {
+
+        var sites = [
+
+            ['Polinela', -5.358725, 105.233413, 1, '<h4>Politeknik Negeri Lampung</h4><p>Keterangan didalam marker</p>'],
+            ['Unila', -5.364505, 105.243442, 2, '<h4>Universitas Lampung</h4><p>Keterangan didalam marker</p>'],
+
+        ];
+        var centerMap = new google.maps.LatLng(-5.358725, 105.233413, 1);
+
+        var myOptions = {
+            zoom: 13,
+            center: centerMap,
+            mapTypeId: google.maps.MapTypeId.ROADMAP
+        }
+
+        var map = new google.maps.Map(document.getElementById("map_canvas"), myOptions);
+
+        setMarkers(map, sites);
+
+        infowindow = new google.maps.InfoWindow({
+            content: "loading..."
+        });
+
+        var bikeLayer = new google.maps.BicyclingLayer();
+        bikeLayer.setMap(map);
+
+    }
+
+
+
+    function setMarkers(map, markers) {
+
+        for (var i = 0; i < markers.length; i++) {
+            var sites = markers[i];
+            var siteLatLng = new google.maps.LatLng(sites[1], sites[2]);
+            var marker = new google.maps.Marker({
+                position: siteLatLng,
+                map: map,
+                title: sites[0],
+                zIndex: sites[3],
+                html: sites[4]
+
+            });
+
+            var contentString = "Some content";
+            google.maps.event.addListener(marker, "mouseover", function () {
+
+                infowindow.setContent(this.html);
+                infowindow.open(map, this);
+            });
+        }
+    }
+
+</script>
+
+</html>
