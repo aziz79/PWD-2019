@@ -1,0 +1,103 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width">
+<script src="http://maps.googleapis.com/maps/api/js"></script>
+
+    <script>
+        function initialize() {
+        var propertiPeta = {
+            center:new google.maps.LatLng(6.21462,106.84513),
+            zoom:9,
+            mapTypeId:google.maps.MapTypeId.ROADMAP
+        };
+        
+        var peta = new google.maps.Map(document.getElementById("googleMap"), propertiPeta);
+        } 
+        google.maps.event.addDomListener(window, 'load', initialize);
+    </script>
+<style>
+* {
+  box-sizing: border-box;
+}
+.menu {	
+  float: left;
+  width: 20%;
+  
+}
+.menuitem {
+  padding: 8px;
+  margin-top: 7px;
+  border-bottom: 1px solid #F00;
+}
+.menuitem:hover{
+background-color:#0F0;
+}
+.main {
+  float: left;
+  width: 60%;
+  padding: 0 20px;
+  overflow: hidden;
+}
+.right {
+  background-color: lightblue;
+  float: left;
+  width: 20%;
+  padding: 10px 15px;
+  margin-top: 7px;
+  height:450px;
+}
+@media only screen and (max-width:800px) {
+.main {
+    width: 80%;
+    padding: 0;
+  }
+.right {
+    width: 100%;
+  }
+}
+@media only screen and (max-width:500px) {
+  .menu, .main, .right {
+    width: 100%;
+  }
+}
+</style>
+<title>UAS PWD SMTR 2</title>
+</head>
+
+
+<body style="font-family:Verdana;">
+
+<div style="background-color:#33D788;padding:20px;">
+  <h1><marquee>Informasi Lokasi Penjualan Perabot Rumah Tangga</marquee></h1>
+</div>
+
+<div style="overflow:auto">
+	</div>
+  <div class="menu">
+    <div class="menuitem"><a href="#">Home</a></div>
+    <div class="menuitem"><a href="#">Toko Perabotan Ashiap</a></div>
+    <div class="menuitem"><a href="#">Toko Perabotan Santuy</a></div>
+    <div class="menuitem"><a href="#">Pabrik Perabotan</a></div>
+    <div class="menuitem"><a href="#">Toko Perabotan Terbaik</a></div>
+    <div class="menuitem"><a href="#">Service</a></div>
+  </div>
+
+  <div class="main">
+    <div id="googleMap" style="width:100%;height:380px;"></div>
+  </div>
+
+  <div class="right">
+    <table>
+    <tr><td colspan="2">Pencarian Denah</td></tr>
+    <tr><td colspan="2"><input  type="search"/></td></tr>
+    <tr><td><input type="submit" value="GO"/></td><td><input type="submit" value="BACK"/></td></tr>
+    </table>
+  </div>
+
+
+
+<div style="background-color:#C3E11B;text-align:center;padding:10px;margin-top:7px;font-size:12px;"> Daniel Guevara Martono <br>2019</div>
+</body>
+</html>
