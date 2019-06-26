@@ -1,0 +1,55 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<script src="http://maps.googleapis.com/maps/api/js"></script>
+
+    <script>
+        // fungsi initialize untuk mempersiapkan peta
+        function initialize() {
+        var propertiPeta = {
+            center:new google.maps.LatLng(-8.5830695,116.3202515),
+            zoom:12,
+            mapTypeId:google.maps.MapTypeId.ROADMAP
+        };
+        
+        var peta = new google.maps.Map(document.getElementById("googleMap"), propertiPeta);
+        }
+
+        // event jendela di-load  
+        google.maps.event.addDomListener(window, 'load', initialize);
+    </script>
+<title>Untitled Document</title>
+</head>
+
+<body>
+<div style="background-color:#f1f1f1;padding:15px;">
+  <h1>Aplikasi Map</h1>
+</div>
+
+    <header>
+        <nav>
+            <li><a href="#sec1">Home</a></li>
+            <li><a href="#sec2">Rute</a></li>
+            <li><a href="#sec3" id="aktif">Login</a></li>
+        </nav>
+    </header>
+    <section id="sec1">
+   <section id="sec2" class="turun">
+        <div class="pang">
+            <input type="text" name="" id="" placeholder="Pencarian">
+            <input type="submit" value="Cari">
+        </div>
+       <div class="main">
+    <h2>Google Maps</h2>
+    <div id="googleMap" style="width:100%;height:380px;"></div>
+  </div>
+    </section>
+    
+    <div style="background-color:#f1f1f1;text-align:center;padding:10px;margin-top:7px;font-size:12px;"> Pemrograman Web Semester 2 <br>2019</div>
+    
+    <div class="footer"> NAMA: Gideon PUtra P	</div>
+	<div class="footer"> NPM :  180403010021 </div>
+
+</body>
+</html>
