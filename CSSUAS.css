@@ -1,0 +1,82 @@
+@charset "utf-8";
+/* CSS Document */
+
+
+body{
+	background: url("WEBBCGRN.jpg");
+	background-repeat: no-repeat;
+	background-attachment: fixed;
+	font-family: Comic Sans MS;
+	background-size: auto;
+	margin: 10px;
+	height: 100%
+}
+
+.maincontainer{
+
+	border: 1px solid white;
+	background-color: grey;
+	margin-top: 100px;
+	margin-right: 80px;
+	margin-left: 80px;
+	padding: 50px;
+	border-top-right-radius: 10px;
+	border-top-left-radius: 10px;
+	text-align: center;
+}
+
+.boxisi{
+
+	border: 1px solid white;
+	background-color: grey;
+	margin-left: 80px;
+	margin-right: 80px;
+	margin-bottom: 80px;
+	padding-right: 20px;
+	padding-bottom: 400px; 
+	border-bottom-right-radius: 10px;
+	border-bottom-left-radius: 10px;
+
+}
+
+.sebelahkiri{
+
+	padding: 1px;
+	width: 400px;
+	height: 400px;
+	background-color: grey;
+	box-sizing: border-box;
+	float: left;
+	border-right: dotted 1px white;
+	border-bottom-left-radius: 10px;
+}
+
+.sebelahkanan{
+
+	width: 700px;
+	height: 400px;
+	background-color: grey;
+	box-sizing: border-box;
+	float: left;
+	border-right: dotted 1px white;
+
+}
+
+table{
+	padding: 40px;
+	margin-top: 90px;
+	margin-bottom: 50px;
+	margin-left: 10px;
+	text-align: center;
+
+}
+
+.footer{
+	padding: 10px;
+	background-color: grey;
+	text-align: center;
+	background-origin: border-box;
+}
+
+
+
