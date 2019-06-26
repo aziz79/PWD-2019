@@ -1,0 +1,145 @@
+
+<!doctype html>
+<html>
+<head>
+<title>Tugas Uas Pemrograman Web Dasar</title>
+<style type="text/css">
+	 body{
+	 	    background:LightGray;
+	 }
+	    *{
+	    	padding: 0px;
+	    	margin: 0px;
+
+	    }
+      
+.head{
+		    text-align:center;
+     	    background: white;
+     	    color:hsla(0,0%,0%,1.00);
+     	    padding: 10px 70px;
+     	    font-family: sans-serif;
+     	    font-size: 10px;
+     	    border-top:10px solid #37f;	
+     }
+
+
+ .nav{
+	    	padding: 10px 0px;
+	    	background: #37f;
+	    	text-align: center;
+	    }
+
+   .main-menu>li{
+         	display: inline-block;
+         	width: 150px;
+         	padding: 5px 0px;
+         	margin-left: 10px;
+         	text-align: center;
+         	color:blacek;
+         	font-size: 20px;
+         	border-left: 1px solid white;
+         	transition: .4s;
+         	cursor: pointer;
+         	box-sizing: border-box;
+
+         }
+	.nav-left{ 
+    		height:480px;
+    		width:75%;
+    		float:left;
+    		overflow: hidden; 
+    		background: #37f;
+		 }
+	.nav-right{
+			position: static;
+			border-color:red;
+    		background: #37f;
+    		height:480px;
+    		width:20%;
+    		float:right;
+    		padding:10px;	
+			overflow: hidden;
+			}
+	.nav-right ul li{
+		    text-align:center;
+			list-style: none;
+			padding:0px;
+			font-size:24px;
+			background-color:Tomato;
+			}
+	.pencarian{
+		   font-size:20px;
+		   text-align:center;
+		   height:200px;
+		   width:251px;
+		   padding:10px;
+		   background-color:Tomato;
+	}
+	.Button{
+	      text-decoration:none;
+	      color:black;
+	      display:block;
+	      width:200px;
+	      padding:5px 10px;
+	      margin:10px;
+	      text-align:center;
+	      border-radius:10px;
+	}
+	.no-1{
+		 background-color:rgba(237,19,236,0.7);
+	}
+	.no-1:hover{
+		 background-color:rgb(233,7,232,5);
+		}
+	.no-2{
+		 background-color:rgba(237,19,236,0.7);
+		}
+	.no-2:hover{
+		 background-color:rgb(233,7,232,5);
+	}
+     .main-menu>li:hover, .sub-menu>li:hover{
+         background:hsla(300,86%,49%,1.00);
+	   }
+ 
+	</style>
+<meta charset="utf-8">
+<title>Untitled Document</title>
+</head>
+
+<body>
+<div class="head">
+<h1>SISTEM INFORMASI PARIWISATA KABUPATEN SIDOARJO</h1>
+</div>
+<br>
+	<div class="nav">
+		<ul class="main-menu">
+			<li>Wisata Relegi</li>
+			<li>Wisata Rekeriasi</li>
+			<li>Wisata Kuliner</li>
+			<li>Wisata Budaya</li>
+			<li>Wisata Belanja</li>
+            <li>Wisata Lain-Lain</li>
+		</ul>
+	</div>
+    <br>
+     <div class="nav-left">
+       <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d63294.81931097077!2d112.70683691468679!3d-7.473401368016696!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2dd7e71f2ade188d%3A0xf0c77a35b14e67c9!2sKec.+Sidoarjo%2C+Kabupaten+Sidoarjo%2C+Jawa+Timur!5e0!3m2!1sid!2sid!4v1561277350403!5m2!1sid!2sid" width="1100" height="500" frameborder="0" style="border:0" allowfullscreen>      </iframe>
+      </div>
+      <div class="nav-right">
+      <ul>
+			<li><a href="">Log In</a></li>
+			<li><a href="">Tambahkan Informasi</a></li>
+			<li><a href="">Tambahkan Lokasi</a></li>
+			<li><a href="">Beri Penilaian</a></li>
+      </ul>
+      <br>
+      <div class="pencarian">
+      <p>Pencarian Dengan Nama Wisata</p>
+      <input  type="search"/>
+      <a href="#"class="Button no-1">CARI</a>
+      <a href="#"class="Button no-2">KEMBALI</a>
+      </div>
+      </div>
+</body>
+</html>
